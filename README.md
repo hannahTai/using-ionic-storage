@@ -23,9 +23,9 @@ Make sure your Ionic project could run on browser and emulator.
 - Call Storage's method.
   ```
   storage.set('name', 'Max');
-  ```
-  ```
-  storage.get('name').then((val) => { console.log('Your name is', val); });
+  storage.get('name').then((val) => { 
+    console.log('Your name is', val); 
+  });
   ```
 
 ## Run on Capacitor
