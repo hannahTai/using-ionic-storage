@@ -34,7 +34,7 @@ Make sure your Ionic project could run on browser and emulator.
 ### Android
 - In Android Studio's Device File Explorer, save [/data/data/<*appId*>/databases/_ionicstorage] to root.
 - Open the saved file with DB Browser for SQLite.
-- The stored item and value saved as key-value pairs in SQLite.
+- The stored item and value saved as key-value pairs in table _ionickv.
 
 ### iOS
 - When running on Xcode, the first line in console output shows something like below. It helps identifying device and application's UUID.
@@ -44,12 +44,12 @@ Make sure your Ionic project could run on browser and emulator.
   Containers/Data/Application/<Application UUID>/Library/Cookies/<appId>.binarycookies
   ```
 - Open [~/Library/Developer/CoreSimulator/Devices/<*Device UUID*>/data/Containers/Data/Application/<*Application UUID*>/Library/LocalDatabase/_ionicstorage] with DB Browser for SQLite.
-- The stored item and value saved as key-value pairs in SQLite.
+- The stored item and value saved as key-value pairs in table _ionickv.
 
 ### Web - Chrome
 - Open Chrome DevTools.
 - Application > Storage > IndexedDB > _ionicstorage.
-- The stored item and value saved as key-value pairs in IndexedDB.
+- The stored item and value saved as key-value pairs in table _ionickv.
 
 ## Run on Capacitor
 - Run `ionic cap sync` to add the plugin.
